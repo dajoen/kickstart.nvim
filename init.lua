@@ -101,14 +101,8 @@ vim.g.have_nerd_font = true
 -- Make line numbers default
 vim.o.number = true
 
--- Set tab width to 4 spaces
-vim.o.tabstop = 4
-vim.o.shiftwidth = 4
-vim.o.expandtab = true
-vim.o.softtabstop = 4
--- You can also add relative line numbers, to help with jumping.
---  Experiment for yourself to see if you like it!
-vim.o.relativenumber = true
+-- Personal options (tab width, relative numbers, etc.)
+require 'custom.options'
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.o.mouse = 'a'
